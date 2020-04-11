@@ -1,0 +1,37 @@
+{
+  "name": "device",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "deviceName": {
+      "type": "string",
+      "required": true
+    },
+    "deviceCategory": {
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "operations": {
+      "type": "hasMany",
+      "model": "operations",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
