@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@loopback/testlab": "^3.0.0",
-    "eslint": "^3.17.1",
+    "eslint": "^4.18.2",
     "eslint-config-loopback": "^8.0.0",
     "mocha": "^7.1.1",
     "supertest": "^4.0.2"
